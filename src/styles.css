@@ -1,0 +1,116 @@
+* {
+  font-size: 1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 90%;
+  max-width: 480px;
+  margin: 3rem auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #102a42;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+img {
+  outline: 4px solid rgb(21, 224, 224);
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.menu p {
+  text-align: left;
+  color: #6184b9;
+  letter-spacing: 0.025rem;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  border-bottom: 1px solid;
+}
+
+.price {
+  color: rgb(9, 163, 163);
+  font-weight: 800;
+}
+
+.title,
+.category,
+.menu {
+  margin-bottom: 4rem;
+}
+
+.filter-btn {
+  text-transform: capitalize;
+  color: teal;
+  background: none;
+  border: transparent;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.filter-btn:hover {
+  background: teal;
+  color: white;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: teal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 900px) {
+  .App {
+    max-width: 700px;
+  }
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  img {
+    max-width: 220px;
+    height: 150px;
+  }
+
+  @media (min-width: 1250px) {
+    .App {
+      max-width: 1400px;
+    }
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+    }
+  }
+}
